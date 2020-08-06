@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/a5921b4238.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us | Tripodeal.in</title>
+</head>
+
+<body>
+
+    <div id="psuedo"></div>
+    <div id="navbar">
+        <div id="logo">
+            <img src="../assets/logo trip.png" alt="TRIP-O-DEAL">
+        </div>
+        <div id="links">
+            <div class="link-child" id="home" onclick="window.location.replace('../')">Home</div>
+            <div class="link-child" id="packages">Packages</div>
+            <div class="link-child" id="attractions" onclick="window.location.replace('../attractions')">Attractions</div>
+            <div class=" link-child" id="activities" onclick="window.location.replace('../activities')">Activities
+            </div>
+            <div class="link-child" id="gallery">Gallery</div>
+            <div class="link-child  nav-active" id="contact-us">Contact Us</div>
+        </div>
+    </div>
+
+    <div id="left-menu">
+        <div class="link-child" id="home" onclick="window.location.replace('../')">Home</div>
+        <div class="link-child" id="packages">Packages</div>
+        <div class="link-child" id="attractions" onclick="window.location.replace('../attractions')">Attractions</div>
+        <div class="link-child" id="activities" onclick="window.location.replace('../activities')">Activities</div>
+        <div class="link-child" id="gallery">Gallery</div>
+        <div class="link-child nav-active" id="contact-us">Contact Us</div>
+    </div>
+
+    <div id="right-menu">
+        <div class="link-child" id="call" onclick="clickCall()"><i class="fas fa-phone-alt"></i>&nbsp;Call Us</div>
+        <div class="link-child" id="wap" onclick="clickWA()"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp Us</div>
+        <div class="link-child" id="email" onclick="clickEmail()"><i class="fas fa-at"></i>&nbsp;Email Us</div>
+    </div>
+
+    <div id="mob-nav">
+        <div class="ico">
+            <img id="left-link" src="../icons/menu.svg" alt="Menu">
+        </div>
+        <div class="ico" id="main-logo">
+            <img src="../assets/logo trip.png" alt="Logo">
+        </div>
+        <div class="ico">
+            <img id="right-link" src="../icons/contact.svg" alt="Contact">
+        </div>
+    </div>
+
+    <div class="main-cont">
+        <div id="head-cont">
+            <h2 id="main-head">Reach out to us: 24x7</h2>
+        </div>
+        <!-- <div id="main-desc">
+        </div> -->
+        <div class="wrapper">
+            <div id="left">
+                <div class="card-cont">
+                    <div class="card">
+                        <h6>Write to us</h6>
+                        <input type="text" placeholder="Name">
+                        <input type="tel" placeholder="Contact Number">
+                        <input type="email" placeholder="E-Mail">
+                        <textarea name="msg" id="msg" rows="4" placeholder="Message"></textarea>
+                        <button>SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <span>
+                    <i class="fas fa-map-marker-alt"></i> #161 , Haliyal road, K C Circle<br>
+                    &nbsp; &nbsp;Dandeli-581325, Karnataka
+                </span>
+                <span onclick="clickEmail()" style="cursor: pointer;">
+                    <i class="fas fa-envelope"></i></i> tripodeal@gmail.com
+                </span>
+                <span onclick="window.open('tel:+918548863234','_blank')" style="cursor: pointer;">
+                    <i class="fas fa-phone-alt"></i></i> +91 85488 63234
+                </span>
+                <iframe frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaZwM_r0hvzsRRt6SGuvgl6U&key=AIzaSyAKKs_sQSENPm1OH0Dg6b4VJyskCcbMV4M"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="sitemap">
+            <h5 class="foot-head">SITEMAP</h5>
+            <ul>
+                <li>Home</li>
+                <li>Packages</li>
+                <ul style="list-style: decimal">
+                    <li>Package A</li>
+                    <li>Package B</li>
+                    <li>Package C</li>
+                </ul>
+                <li>Attractions</li>
+                <li>Activities</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="social">
+            <h5 class="foot-head">SOCIALS</h5>
+            <i class="fab fa-instagram-square" onclick="clickIG()"></i>
+            <i class="fab fa-facebook-square" onclick="clickFB()"></i>
+            <i class="fab fa-whatsapp-square" onclick="clickWA()"></i>
+            <i class="fas fa-envelope-square" onclick="clickEmail()"></i></i>
+        </div>
+        <div id="reach">
+            <h5 class="foot-head">REACH OUT TO US</h5>
+            #161, Haliyal Road, K C Circle<br>
+            Dandeli - 581325, Karnataka<br>
+            <a href="tel:+918548863234">+91 85488 63234</a><br>
+            <a href="mailto:tripodeal@gmail.com">tripodeal@gmail.com</a>
+        </div>
+    </footer>
+    <footer id="foot-last">
+        &copy;2020, All Rights Reserved, tripodeal.in
+    </footer>
+
+    <script type="text/javascript">
+        // Psuedo Hyperlinks
+        function clickWA() {
+            window.open('https://wa.me/918548863234', '_blank');
+        }
+
+        function clickIG() {
+            window.open('https://www.instagram.com/tripodeal1/', '_blank');
+        }
+
+        function clickFB() {
+            window.open('https://www.facebook.com/tripodeal1/', '_blank');
+        }
+
+        function clickEmail() {
+            window.open('mailto:tripodeal@gmail.com', '_blank');
+        }
+        // -----------------------------    
+
+        window.onscroll = function (e) {
+            document.querySelector('#navbar').classList.add('scrolled');
+            if (isElementInViewport(document.querySelector('#psuedo'))) {
+                document.querySelector('#navbar').classList.remove('scrolled');
+            }
+            document.querySelector('#mob-nav').classList.add('scrolled');
+            if (isElementInViewport(document.querySelector('#psuedo'))) {
+                document.querySelector('#mob-nav').classList.remove('scrolled');
+            }
+        }
+
+        function isElementInViewport(el) {
+
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // SUBMIT button
+        document.querySelector('.card > button').addEventListener('click', function () {
+            if (document.querySelector('input[type="text"]').value == null || document.querySelector(
+                    'input[type="text"]').value == undefined || document.querySelector('input[type="text"]')
+                .value == "") {
+                alert("Please enter your name");
+                return;
+            }
+            if (document.querySelector('input[type="tel"]').value == null || document.querySelector(
+                    'input[type="tel"]').value == undefined || document.querySelector('input[type="tel"]')
+                .value == "") {
+                alert("Please enter your phone number");
+                return;
+            }
+            if (document.querySelector('input[type="email"]').value == null || document.querySelector(
+                    'input[type="email"]').value == undefined || document.querySelector('input[type="email"]')
+                .value == "") {
+                alert("Please enter your email");
+                return;
+            }
+
+            var data = {
+                'name': document.querySelector('input[type="text"]').value,
+                'email': document.querySelector('input[type="email"]').value,
+                'phone': document.querySelector('input[type="tel"]').value,
+                'msg': document.querySelector('textarea').value
+            }
+
+            // fetch('', {
+            //     method: 'POST',
+            //     headers: {
+            //         "Content-Type": "application/JSON",
+            //     },
+            //     body: JSON.stringify(data),
+            //     credentials: 'include',
+            //     redirect: 'error'
+            // }).then(res => {
+            //     return res.json();
+            // }).then(function (json) {
+            //     alert(json.msg);
+            //     if (json.success) alert("We will contact you soon!");
+            // }).catch(function (error) {
+            //     console.log(error);
+            // });
+
+        });
+    </script>
+    <script type="text/javascript">
+        var open_menu = 0;
+
+        function toggleOpaque() {
+            var list = document.querySelectorAll('body')[0].children;
+            list[5].classList.toggle('opacity');
+            list[6].classList.toggle('opacity');
+            list[7].classList.toggle('opacity');
+
+
+            // toggle scrolling too
+            document.querySelector('html').classList.toggle('no-scroll');
+        }
+
+        document.querySelector('#left-link').addEventListener('click', function () {
+            if (open_menu == 0) {
+                document.querySelector('#left-menu').classList.add('left-slide');
+                open_menu = 1;
+                toggleOpaque();
+            } else if (open_menu == 1) {
+                document.querySelector('#left-menu').classList.remove('left-slide');
+                open_menu = 0;
+                toggleOpaque();
+            } else if (open_menu == 2) {
+                document.querySelector('#right-menu').classList.remove('right-slide');
+                document.querySelector('#left-menu').classList.add('left-slide');
+                open_menu = 1;
+            }
+        });
+
+        document.querySelector('#right-link').addEventListener('click', function () {
+            if (open_menu == 0) {
+                document.querySelector('#right-menu').classList.add('right-slide');
+                open_menu = 2;
+                toggleOpaque();
+            } else if (open_menu == 2) {
+                document.querySelector('#right-menu').classList.remove('right-slide');
+                open_menu = 0;
+                toggleOpaque();
+            } else if (open_menu == 1) {
+                document.querySelector('#left-menu').classList.remove('left-slide');
+                document.querySelector('#right-menu').classList.add('right-slide');
+                open_menu = 2;
+            }
+        });
+    </script>
+</body>
+
+</html>

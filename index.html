@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <script src="https://kit.fontawesome.com/a5921b4238.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | tripodeal.in</title>
+</head>
+
+<body>
+    <div id="psuedo"></div>
+    <div id="navbar">
+        <div id="logo">
+            <img src="./assets/logo trip.png" alt="TRIP-O-DEAL">
+        </div>
+        <div id="links">
+            <div class="link-child nav-active" id="home">Home</div>
+            <div class="link-child" id="packages">Packages</div>
+            <div class="link-child" id="attractions" onclick="window.location.replace('./attractions')">Attractions
+            </div>
+            <div class="link-child" id="activities" onclick="window.location.replace('./activities')">Activities</div>
+            <div class="link-child" id="gallery">Gallery</div>
+            <div class="link-child" id="contact-us" onclick="window.location.replace('./contact-us')">Contact Us</div>
+        </div>
+    </div>
+
+    <div id="left-menu">
+        <div class="link-child nav-active" id="home">Home</div>
+        <div class="link-child" id="packages">Packages</div>
+        <div class="link-child" id="attractions" onclick="window.location.replace('./attractions')">Attractions</div>
+        <div class="link-child" id="activities" onclick="window.location.replace('./activities')">Activities</div>
+        <div class="link-child" id="gallery">Gallery</div>
+        <div class="link-child" id="contact-us" onclick="window.location.replace('./contact-us')">Contact Us</div>
+    </div>
+
+    <div id="right-menu">
+        <div class="link-child" id="call" onclick="clickCall()"><i class="fas fa-phone-alt"></i>&nbsp;Call Us</div>
+        <div class="link-child" id="wap" onclick="clickWA()"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp Us</div>
+        <div class="link-child" id="email" onclick="clickEmail()"><i class="fas fa-at"></i>&nbsp;Email Us</div>
+    </div>
+
+    <div id="mob-nav">
+        <div class="ico">
+            <img id="left-link" src="./icons/menu.svg" alt="Menu">
+        </div>
+        <div class="ico" id="main-logo">
+            <img src="./assets/logo trip.png" alt="Menu">
+        </div>
+        <div class="ico">
+            <img id="right-link" src="./icons/contact.svg" alt="Menu">
+        </div>
+    </div>
+
+
+    <div id="slider">
+        <img src="./icons/left.svg" alt="left">
+        <img src="./icons/right.svg" alt="right">
+        <div class="slider-cont prev">
+            <img class="asyncImage"src="./assets/slide1_min.jpeg" data-src="./assets/slide1.jpeg" alt="Rafting">
+            <span class="big-text">ADVENTURE</span>
+            <span class="big-text-shadow">ADVENTURE</span>
+        </div>
+        <div class="slider-cont active">
+            <img class="asyncImage"src="./assets/slide2_min.jpeg"data-src="./assets/slide2.jpeg" alt="Creek">
+            <span class="big-text">GETAWAY</span>
+            <span class="big-text-shadow">GETAWAY</span>
+        </div>
+        <div class="slider-cont next">
+            <img class="asyncImage"src="./assets/slide3_min.jpeg"data-src="./assets/slide3.jpeg" alt="Nature House">
+            <span class="big-text">EXPERIENCE</span>
+            <span class="big-text-shadow">EXPERIENCE</span>
+        </div>
+        <div class="slider-cont">
+            <img class="asyncImage"src="./assets/slide4_min.jpeg" data-src="./assets/slide4.jpeg" alt="Sceninc View">
+            <span class="big-text">REJUVENATE</span>
+            <span class="big-text-shadow">REJUVENATE</span>
+        </div>
+        <div class="slider-cont">
+            <img class="asyncImage"src="./assets/slide5_min.jpeg"data-src="./assets/slide5.jpeg" alt="Nagoda Backwaters">
+            <span class="big-text">REPOSE</span>
+            <span class="big-text-shadow">REPOSE</span>
+        </div>
+        <div class="slider-cont">
+            <img class="asyncImage"src="./assets/slide6_min.jpeg"data-src="./assets/slide6.jpeg" alt="Zorbing">
+            <span class="big-text">CELEBRATE</span>
+            <span class="big-text-shadow">CELEBRATE</span>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div id="head-cont">
+            <h2 id="main-head">Unfold your story, complemented by us</h2>
+        </div>
+        <div id="main-content">
+            <div class="content-container">
+                <div class="text">
+                    Breath-taking landscapes, Mind boggling tourist spots complemented by enticing food
+                    and millions of moments captured, cherished for a lifetime. Dandeli, a small town camouflaged
+                    under the picturesque locales and gorgeous tourist spots can be your next stress buster. In the
+                    State of our very own Karnataka surrounded by the Evergreen Western Ghats, synonymous for
+                    its serene scenic beauty, tropical rich climate has every piece of nuance you would love to have
+                    in your travel destination plan.
+                </div>
+                <div class="img">
+                    <img src="./assets/slide2.jpeg" alt="img1">
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="text">
+                    From pristine wildlife sanctuaries and thrilling white-water rafting experiences to
+                    dreamy morning jungle walks and exotic resorts. An incredible experience away from all the
+                    chaos of the hustle and bustle of a fast-moving cities that halts your breath, calms you down to
+                    just live the moment in awe.
+                </div>
+                <div class="img">
+                    <img src="./assets/slide2.jpeg" alt="img1">
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="text">
+                    We at <b>TRIP-O-DEAL</b>, A travel company with kickass and exuberant staff are here to
+                    deliver an exhilarating experience from your travel plan right at your fingertips to the journey
+                    unfolded here in Dandeli. With no frills approach, we have affordable and exciting value for you
+                    all. Be it tiny weekend trip for a cliché visit or a week-long trip to explore the wanderlust in
+                    you,
+                    we have got you covered.
+                </div>
+                <div class="img">
+                    <img src="./assets/slide2.jpeg" alt="img1">
+                </div>
+            </div>
+            <div id="head-cont">
+                <h2 id="sec-head">Why choose us?</h2>
+            </div>
+            <div class="content-container" id="why-cont">
+                <div class="pointer">
+                    <img src="./assets/SVG/1.svg" alt="icon-2">
+                    <span class="reason">
+                        Customised Packages
+                    </span>
+                </div>
+                <div class="pointer">
+                    <img src="./assets/SVG/2.svg" alt="icon-2">
+                    <span class="reason">
+                        24/7 Support
+                    </span>
+                </div>
+                <div class="pointer">
+                    <img src="./assets/SVG/3.svg" alt="icon-2">
+                    <span class="reason">
+                        Jaw Dropping Offers
+                    </span>
+                </div>
+                <div class="pointer">
+                    <img src="./assets/SVG/4.svg" alt="icon-2">
+                    <span class="reason">
+                        Spectacular Resorts
+                    </span>
+                </div>
+                <div class="pointer">
+                    <img src="./assets/SVG/5.svg" alt="icon-2">
+                    <span class="reason">
+                        Awesome Experience
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="sitemap">
+            <h5 class="foot-head">SITEMAP</h5>
+            <ul>
+                <li>Home</li>
+                <li>Packages</li>
+                <ul style="list-style: decimal">
+                    <li>Package A</li>
+                    <li>Package B</li>
+                    <li>Package C</li>
+                </ul>
+                <li>Attractions</li>
+                <li>Activities</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="social">
+            <h5 class="foot-head">SOCIALS</h5>
+            <i class="fab fa-instagram-square" onclick="clickIG()"></i>
+            <i class="fab fa-facebook-square" onclick="clickFB()"></i>
+            <i class="fab fa-whatsapp-square" onclick="clickWA()"></i>
+            <i class="fas fa-envelope-square" onclick="clickEmail()"></i></i>
+        </div>
+        <div id="reach">
+            <h5 class="foot-head">REACH OUT TO US</h5>
+            #161, Haliyal Road, K C Circle<br>
+            Dandeli - 581325, Karnataka<br>
+            <a href="tel:+918548863234">+91 85488 63234</a><br>
+            <a href="mailto:tripodeal@gmail.com">tripodeal@gmail.com</a>
+        </div>
+    </footer>
+    <footer id="foot-last">
+        &copy;2020, All Rights Reserved, tripodeal.in
+    </footer>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
