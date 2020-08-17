@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a5921b4238.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Contact Us | Tripodeal.in</title>
+    <title>Packages | Tripodeal.in</title>
 </head>
 
 <body>
@@ -21,22 +21,21 @@
         </div>
         <div id="links">
             <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
-            <div class="link-child" id="packages" onclick="window.location.assign('../packages')">Packages</div>
+            <div class="link-child  nav-active" id="packages">Packages</div>
             <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions</div>
-            <div class=" link-child" id="activities" onclick="window.location.assign('../activities')">Activities
-            </div>
+            <div class="link-child" id="activities" onclick="window.location.assign('../activities')"> Activities</div>
             <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
-            <div class="link-child  nav-active" id="contact-us">Contact Us</div>
+            <div class="link-child" id="contact-us" onclick="window.location.assign('../contact-us')">Contact Us</div>
         </div>
     </div>
 
     <div id="left-menu">
         <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
-        <div class="link-child" id="packages" onclick="window.location.assign('../packages')">Packages</div>
-        <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions</div>
+        <div class="link-child nav-active" id="packages">Packages</div>
+        <div class="link-child" id="attractions">Attractions</div>
         <div class="link-child" id="activities" onclick="window.location.assign('../activities')">Activities</div>
-        <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
-        <div class="link-child nav-active" id="contact-us">Contact Us</div>
+        <div class="link-child" id="gallery">Gallery</div>
+        <div class="link-child" id="contact-us" onclick="window.location.assign('../contact-us')">Contact Us</div>
     </div>
 
     <div id="right-menu">
@@ -59,37 +58,25 @@
 
     <div class="main-cont">
         <div id="head-cont">
-            <h2 id="main-head">Reach out to us: 24x7</h2>
+            <h2 id="main-head">Half the fun of travel is the aesthetic of lostness</h2>
         </div>
-        <!-- <div id="main-desc">
-        </div> -->
-        <div class="wrapper">
-            <div id="left">
-                <div class="card-cont">
-                    <div class="card">
-                        <h6>Write to us</h6>
-                        <input type="text" placeholder="Name">
-                        <input type="tel" placeholder="Contact Number">
-                        <input type="email" placeholder="E-Mail">
-                        <textarea name="msg" id="msg" rows="4" placeholder="Message"></textarea>
-                        <button>SUBMIT</button>
-                    </div>
+        <div id="main-desc">
+            Dandeli packages offers you incredible amount of value at irresistible prices. Only by TRIP-O-DEAL. Starting  from your stay to the whole adventures , we have got you covered. Seasonal, what are they? When you can have 365 days of great deals from jungle homestay to river side resorts, from White Water Rafting to taking a subtle nature's snapshot we have the best packages of Dandeli. So grab the package which suites you best.
+        </div>
+
+        <div class="card-cont">
+            <div class="card">
+                <img src="../assets/Attractions/Backwaters.JPG" alt="Bapeli_Bakcwaters">
+                <div class="desc">
+                    <h6>BAPELI BACKWATERS</h6>
+                    <span>
+                        Tranquility at its apex, bapeli backwaters situated on the river kali is an abode of dolphins
+                        and nature&#39;s elegance. Just the kind of stop you want to spend with your near and dear...
+                        Take a breathe
+                        and listen to the symphony of mother nature surrounded by a spectacular view on all sides. You
+                        are surged to be awed.
+                    </span>
                 </div>
-            </div>
-            <div id="right">
-                <span>
-                    <i class="fas fa-map-marker-alt"></i> #161 , Haliyal road, K C Circle<br>
-                    &nbsp; &nbsp;Dandeli-581325, Karnataka
-                </span>
-                <span onclick="clickEmail()" style="cursor: pointer;">
-                    <i class="fas fa-envelope"></i></i> tripodeal@gmail.com
-                </span>
-                <span onclick="window.open('tel:+918548863234','_blank')" style="cursor: pointer;">
-                    <i class="fas fa-phone-alt"></i></i> +91 85488 63234
-                </span>
-                <iframe frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaZwM_r0hvzsRRt6SGuvgl6U&key=AIzaSyAKKs_sQSENPm1OH0Dg6b4VJyskCcbMV4M"
-                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -171,54 +158,8 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
-
-        // SUBMIT button
-        document.querySelector('.card > button').addEventListener('click', function () {
-            if (document.querySelector('input[type="text"]').value == null || document.querySelector(
-                    'input[type="text"]').value == undefined || document.querySelector('input[type="text"]')
-                .value == "") {
-                alert("Please enter your name");
-                return;
-            }
-            if (document.querySelector('input[type="tel"]').value == null || document.querySelector(
-                    'input[type="tel"]').value == undefined || document.querySelector('input[type="tel"]')
-                .value == "") {
-                alert("Please enter your phone number");
-                return;
-            }
-            if (document.querySelector('input[type="email"]').value == null || document.querySelector(
-                    'input[type="email"]').value == undefined || document.querySelector('input[type="email"]')
-                .value == "") {
-                alert("Please enter your email");
-                return;
-            }
-
-            var data = {
-                'name': document.querySelector('input[type="text"]').value,
-                'email': document.querySelector('input[type="email"]').value,
-                'phone': document.querySelector('input[type="tel"]').value,
-                'msg': document.querySelector('textarea').value
-            }
-
-            // fetch('', {
-            //     method: 'POST',
-            //     headers: {
-            //         "Content-Type": "application/JSON",
-            //     },
-            //     body: JSON.stringify(data),
-            //     credentials: 'include',
-            //     redirect: 'error'
-            // }).then(res => {
-            //     return res.json();
-            // }).then(function (json) {
-            //     alert(json.msg);
-            //     if (json.success) alert("We will contact you soon!");
-            // }).catch(function (error) {
-            //     console.log(error);
-            // });
-
-        });
     </script>
+
     <script type="text/javascript">
         var open_menu = 0;
 
