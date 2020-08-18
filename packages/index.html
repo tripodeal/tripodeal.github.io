@@ -22,7 +22,8 @@
         <div id="links">
             <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
             <div class="link-child  nav-active" id="packages">Packages</div>
-            <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions</div>
+            <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions
+            </div>
             <div class="link-child" id="activities" onclick="window.location.assign('../activities')"> Activities</div>
             <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
             <div class="link-child" id="contact-us" onclick="window.location.assign('../contact-us')">Contact Us</div>
@@ -58,24 +59,116 @@
 
     <div class="main-cont">
         <div id="head-cont">
-            <h2 id="main-head">Half the fun of travel is the aesthetic of lostness</h2>
+            <h2 id="main-head">[Packages short desc here]</h2>
         </div>
         <div id="main-desc">
-            Dandeli packages offers you incredible amount of value at irresistible prices. Only by TRIP-O-DEAL. Starting  from your stay to the whole adventures , we have got you covered. Seasonal, what are they? When you can have 365 days of great deals from jungle homestay to river side resorts, from White Water Rafting to taking a subtle nature's snapshot we have the best packages of Dandeli. So grab the package which suites you best.
+            Dandeli packages offers you incredible amount of value at irresistible prices. Only by TRIP-O-DEAL. Starting
+            from your stay to the whole adventures , we have got you covered. Seasonal, what are they? When you can have
+            365 days of great deals from jungle homestay to river side resorts, from White Water Rafting to taking a
+            subtle nature's snapshot we have the best packages of Dandeli. So grab the package which suites you best.
         </div>
 
-        <div class="card-cont">
-            <div class="card">
-                <img src="../assets/Attractions/Backwaters.JPG" alt="Bapeli_Bakcwaters">
-                <div class="desc">
-                    <h6>BAPELI BACKWATERS</h6>
-                    <span>
-                        Tranquility at its apex, bapeli backwaters situated on the river kali is an abode of dolphins
-                        and nature&#39;s elegance. Just the kind of stop you want to spend with your near and dear...
-                        Take a breathe
-                        and listen to the symphony of mother nature surrounded by a spectacular view on all sides. You
-                        are surged to be awed.
-                    </span>
+        <div id="pack-wrap">
+            <div id="pack-cont">
+                <div id="pack-sub-cont">
+                    <div class="card-cont">
+                        <div class="card">
+                            <img src="../images/WW/premium-external-1.jpg" alt="Whistling Woods">
+                            <div class="desc">
+                                <h6>WHISTLING WOODS</h6>
+                                <button data-type="ww" onclick="openPlay(this)">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="../icons/arrow.svg">
+                    </div>
+                </div>
+                <div id="pack-sub-cont">
+                    <div class="card-cont">
+                        <div class="card">
+                            <img src="../images/pp2.jpeg" alt="Whistling Woods">
+                            <div class="desc">
+                                <h6>PEPPER PARADISE</h6>
+                                <button data-type="pp" onclick="openPlay(this)">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="../icons/arrow.svg">
+                    </div>
+                </div>
+                <div id="pack-sub-cont">
+                    <div class="card-cont">
+                        <div class="card">
+                            <img src="../images/rc1.jpeg" alt="Whistling Woods">
+                            <div class="desc">
+                                <h6>RANGERS CAMP</h6>
+                                <button data-type="rc" onclick="openPlay(this)">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="../icons/arrow.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="play-area">
+            <h5>Click on Know More to expand!</h5>
+            <div id="main-area" class="">
+                <div id="border">
+                    <div class="pack-det pack-not-active" id="ww">
+                        <div class="text-det">
+                            <h6>WHISTLING WOODS</h6>
+                            <ul>
+                                <li>Relaxing Cottage/Tent Stay</li>
+                                <li>3 Delicious Meals( Veg & Non-Veg)</li>
+                                <li>4 Complimentary Water activities</li>
+                                <li>Swimming pool</li>
+                                <li>Enjoyable indoor games</li>
+                            </ul>
+                        </div>
+                        <div class="img-det">
+                            <img src="../images/WW/Spa-1.jpg" alt="ww1">
+                            <img src="../images/WW/river-view-wr-1.jpg" alt="ww2">
+                        </div>
+                    </div>
+                    <div class="pack-det pack-not-active" id="pp">
+                        <div class="text-det">
+                            <h6>PEPPER PARADISE</h6>
+                            <ul>
+                                <li>Hygiene Cottage/Tent Stay</li>
+                                <li>3 delicious meals (Veg & Non-Veg)</li>
+                                <li>5 Complimentary Water Activities</li>
+                                <li>Campfire & Nature Walk</li>
+                                <li>Indoor Games</li>
+                                <li>Cycling & more…</li>
+                            </ul>
+                        </div>
+                        <div class="img-det">
+                            <img src="../images/pp3.jpeg" alt="pp1">
+                            <img src="../images/pp8.jpeg" alt="pp2">
+                        </div>
+                    </div>
+                    <div class="pack-det pack-not-active" id="rc">
+                        <div class="text-det">
+                            <h6>RANGERS CAMP</h6>
+                            <ul>
+                                <li>Hygiene Cottage/Tent Stay</li>
+                                <li>3 Delicious meals (Veg & Non-Veg)</li>
+                                <li>6 Complimentary Water activities</li>
+                                <li>Swimming Pool with Jacuzzi</li>
+                                <li>Campfire & Nature Walk</li>
+                                <li>Unlimited Indoor Games</li>
+                                <li>Cycling & more…</li>
+                            </ul>
+                        </div>
+                        <div class="img-det">
+                            <img src="../images/rc3.jpeg" alt="rc1">
+                            <img src="../images/rc5.jpeg" alt="rc2">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,6 +298,34 @@
                 open_menu = 2;
             }
         });
+
+        var open = 0;
+
+        function openPlay(e) {
+            var type = e.getAttribute('data-type');
+
+            if (open) {
+                document.querySelector('.arrow-active').classList.remove('arrow-active');
+                window.setTimeout(function () {
+                    document.querySelector('#main-area').classList.remove('active');
+                    document.querySelector('.pack-active').classList.add('pack-not-active');
+                    document.querySelector('.pack-active').classList.remove('pack-active');
+                }, 500);
+                window.setTimeout(function () {
+                    document.querySelector('#main-area').classList.add('active');
+                    e.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.classList.add(
+                        'arrow-active');
+                    document.getElementById(type).classList.remove('pack-not-active');
+                    document.getElementById(type).classList.add('pack-active');
+                }, 900)
+            } else {
+                e.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.classList.add('arrow-active');
+                document.querySelector('#main-area').classList.add('active');
+                document.getElementById(type).classList.remove('pack-not-active');
+                document.getElementById(type).classList.add('pack-active');
+                open = 1;
+            }
+        };
     </script>
 </body>
 
