@@ -139,7 +139,7 @@ document.querySelector('#right-link').addEventListener('click', function () {
 
 // Psuedo Hyperlinks
 function clickWA() {
-    window.open('https://wa.me/918548863234', '_blank');
+    window.open('https://wa.me/918867265789', '_blank');
 }
 
 function clickIG() {
@@ -155,7 +155,7 @@ function clickEmail() {
 }
 
 function clickCall() {
-    window.open('tel:+918548863234', '_blank');
+    window.open('tel:+918867265789', '_blank');
 }
 
 (() => {
