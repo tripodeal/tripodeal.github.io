@@ -11,6 +11,8 @@
 
     gtag('config', 'UA-176044128-1');
     </script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.serialize-object.js"></script>
 
     
     <meta charset="UTF-8">
@@ -84,16 +86,19 @@
         </div>
         <!-- <div id="main-desc">
         </div> -->
+        
         <div class="wrapper">
             <div id="left">
                 <div class="card-cont">
                     <div class="card">
                         <h6>Write to us</h6>
-                        <input type="text" placeholder="Name">
-                        <input type="tel" placeholder="Contact Number">
-                        <input type="email" placeholder="E-Mail">
-                        <textarea name="msg" id="msg" rows="4" placeholder="Message"></textarea>
-                        <button>SUBMIT</button>
+                        <form class="contact-form" id="test-form">
+                        <input type="text" placeholder="Name" name="Name">
+                        <input type="tel" placeholder="Contact Number" name="Contact">
+                        <input type="email" placeholder="E-Mail" name="Email">
+                        <textarea id="msg" rows="4" placeholder="Message" name="Message"></textarea>
+                        <button id="submit-form">SUBMIT</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -286,6 +291,26 @@
             }
         });
     </script>
+
+    <script>
+        var $form = $('form#test-form'),
+            url = 'https://script.google.com/macros/s/AKfycbzkBDxiuXVK6da_aaQFi8N9n7f0FxpQr066J9LZvygHnoPQPg/exec'
+        
+        $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject()
+        }).success(
+            // do something
+            alert("Details sent! We will get back to you shortly")
+        );
+        })
+        </script>
+
+        
 </body>
 
 </html>
