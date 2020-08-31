@@ -833,4 +833,15 @@ li>a {
         height: 15%;
         font-size: 5.5vw;
     }
+    .preloader>svg{
+        height: 90vw !important;
+        width: 90vw !important;
+        margin-top: -10vh
+    }
+    
+    .preloader>div{
+        font-size: 2em;
+        color: var(--main-night);
+        margin-top: -10vh; 
+    }
 }
