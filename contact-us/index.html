@@ -5,16 +5,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176044128-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-176044128-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176044128-1');
     </script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.serialize-object.js"></script>
 
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -45,7 +48,8 @@
         <div id="links">
             <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
             <div class="link-child" id="packages" onclick="window.location.assign('../packages')">Packages</div>
-            <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions</div>
+            <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions
+            </div>
             <div class=" link-child" id="activities" onclick="window.location.assign('../activities')">Activities
             </div>
             <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
@@ -53,30 +57,27 @@
         </div>
     </div>
 
-    <div id="left-menu">
-        <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
-        <div class="link-child" id="packages" onclick="window.location.assign('../packages')">Packages</div>
-        <div class="link-child" id="attractions" onclick="window.location.assign('../attractions')">Attractions</div>
-        <div class="link-child" id="activities" onclick="window.location.assign('../activities')">Activities</div>
-        <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
-        <div class="link-child nav-active" id="contact-us">Contact Us</div>
-    </div>
-
     <div id="right-menu">
-        <div class="link-child" id="call" onclick="clickCall()"><i class="fas fa-phone-alt"></i>&nbsp;Call Us</div>
-        <div class="link-child" id="wap" onclick="clickWA()"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp Us</div>
-        <div class="link-child" id="email" onclick="clickEmail()"><i class="fas fa-at"></i>&nbsp;Email Us</div>
+        <div class="link-child nav-active" id="home">Home</div>
+        <div class="link-child" id="packages" onclick="window.location.assign('./packages')">Packages</div>
+        <div class="link-child" id="attractions" onclick="window.location.assign('./attractions')">Attractions</div>
+        <div class="link-child" id="activities" onclick="window.location.assign('./activities')">Activities</div>
+        <div class="link-child" id="gallery" onclick="window.location.assign('./gallery')">Gallery</div>
+        <div class="link-child" id="contact-us" onclick="window.location.assign('./contact-us')">Contact Us</div>
     </div>
 
     <div id="mob-nav">
-        <div class="ico">
-            <img id="left-link" src="../icons/menu.svg" alt="Menu">
-        </div>
         <div class="ico" id="main-logo">
             <img src="../assets/logo trip.png" alt="Logo">
         </div>
         <div class="ico">
-            <img id="right-link" src="../icons/contact.svg" alt="Contact">
+            <img src="../icons/whatsapp.svg" onclick="clickWA();" alt="Whatsapp">
+        </div>
+        <div class="ico">
+            <img src="../icons/phone.svg" onclick="clickCall();" alt="Call">
+        </div>
+        <div class="ico">
+            <img id="right-link" src="../icons/menu.svg" alt="Menu">
         </div>
     </div>
 
@@ -86,25 +87,26 @@
         </div>
         <!-- <div id="main-desc">
         </div> -->
-        
+
         <div class="wrapper">
             <div id="left">
                 <div class="card-cont">
                     <div class="card">
                         <h6>Write to us</h6>
                         <form class="contact-form" id="test-form">
-                        <input type="text" placeholder="Name" name="Name">
-                        <input type="tel" placeholder="Contact Number" name="Contact">
-                        <input type="email" placeholder="E-Mail" name="Email">
-                        <textarea id="msg" rows="4" placeholder="Message" name="Message"></textarea>
-                        <button id="submit-form">SUBMIT</button>
+                            <input type="text" placeholder="Name" name="Name">
+                            <input type="tel" placeholder="Contact Number" name="Contact">
+                            <input type="email" placeholder="E-Mail" name="Email">
+                            <textarea id="msg" rows="4" placeholder="Message" name="Message"></textarea>
+                            <button id="submit-form">SUBMIT</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div id="right">
                 <span>
-                    <i class="fas fa-map-marker-alt"></i><small> IV/479 , K C Circle, Haliyal - Dandeli Rd, Dandeli - 581325, Karnataka</small>
+                    <i class="fas fa-map-marker-alt"></i><small> IV/479 , K C Circle, Haliyal - Dandeli Rd, Dandeli -
+                        581325, Karnataka</small>
                 </span>
                 <span onclick="clickEmail()" style="cursor: pointer;">
                     <i class="fas fa-envelope"></i><small> tripodeal@gmail.com</small>
@@ -258,22 +260,6 @@
             document.querySelector('html').classList.toggle('no-scroll');
         }
 
-        document.querySelector('#left-link').addEventListener('click', function () {
-            if (open_menu == 0) {
-                document.querySelector('#left-menu').classList.add('left-slide');
-                open_menu = 1;
-                toggleOpaque();
-            } else if (open_menu == 1) {
-                document.querySelector('#left-menu').classList.remove('left-slide');
-                open_menu = 0;
-                toggleOpaque();
-            } else if (open_menu == 2) {
-                document.querySelector('#right-menu').classList.remove('right-slide');
-                document.querySelector('#left-menu').classList.add('left-slide');
-                open_menu = 1;
-            }
-        });
-
         document.querySelector('#right-link').addEventListener('click', function () {
             if (open_menu == 0) {
                 document.querySelector('#right-menu').classList.add('right-slide');
@@ -284,7 +270,7 @@
                 open_menu = 0;
                 toggleOpaque();
             } else if (open_menu == 1) {
-                document.querySelector('#left-menu').classList.remove('left-slide');
+                // document.querySelector('#left-menu').classList.remove('left-slide');
                 document.querySelector('#right-menu').classList.add('right-slide');
                 open_menu = 2;
             }
@@ -294,22 +280,22 @@
     <script>
         var $form = $('form#test-form'),
             url = 'https://script.google.com/macros/s/AKfycbzkBDxiuXVK6da_aaQFi8N9n7f0FxpQr066J9LZvygHnoPQPg/exec'
-        
-        $('#submit-form').on('click', function(e) {
-        e.preventDefault();
-        var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject()
-        }).success(
-            // do something
-            alert("Details sent! We will get back to you shortly")
-        );
-        })
-        </script>
 
-        
+        $('#submit-form').on('click', function (e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+                alert("Details sent! We will get back to you shortly")
+            );
+        })
+    </script>
+
+
 </body>
 
 </html>

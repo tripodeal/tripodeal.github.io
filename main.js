@@ -105,21 +105,7 @@ function toggleOpaque() {
     document.querySelector('html').classList.toggle('no-scroll');
 }
 
-// document.querySelector('#left-link').addEventListener('click', function () {
-//     if (open_menu == 0) {
-//         document.querySelector('#left-menu').classList.add('left-slide');
-//         open_menu = 1;
-//         toggleOpaque();
-//     } else if (open_menu == 1) {
-//         document.querySelector('#left-menu').classList.remove('left-slide');
-//         open_menu = 0;
-//         toggleOpaque();
-//     } else if (open_menu == 2) {
-//         document.querySelector('#right-menu').classList.remove('right-slide');
-//         document.querySelector('#left-menu').classList.add('left-slide');
-//         open_menu = 1;
-//     }
-// });
+
 
 document.querySelector('#right-link').addEventListener('click', function () {
     if (open_menu == 0) {

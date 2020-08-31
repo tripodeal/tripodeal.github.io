@@ -5,14 +5,17 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176044128-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-176044128-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176044128-1');
     </script>
 
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -50,30 +53,27 @@
         </div>
     </div>
 
-    <div id="left-menu">
-        <div class="link-child" id="home" onclick="window.location.assign('../')">Home</div>
-        <div class="link-child" id="packages" onclick="window.location.assign('../packages')">Packages</div>
-        <div class="link-child nav-active" id="attractions">Attractions</div>
-        <div class="link-child" id="activities" onclick="window.location.assign('../activities')">Activities</div>
-        <div class="link-child" id="gallery" onclick="window.location.assign('../gallery')">Gallery</div>
-        <div class="link-child" id="contact-us" onclick="window.location.assign('../contact-us')">Contact Us</div>
-    </div>
-
     <div id="right-menu">
-        <div class="link-child" id="call" onclick="clickCall()"><i class="fas fa-phone-alt"></i>&nbsp;Call Us</div>
-        <div class="link-child" id="wap" onclick="clickWA()"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp Us</div>
-        <div class="link-child" id="email" onclick="clickEmail()"><i class="fas fa-at"></i>&nbsp;Email Us</div>
+        <div class="link-child nav-active" id="home">Home</div>
+        <div class="link-child" id="packages" onclick="window.location.assign('./packages')">Packages</div>
+        <div class="link-child" id="attractions" onclick="window.location.assign('./attractions')">Attractions</div>
+        <div class="link-child" id="activities" onclick="window.location.assign('./activities')">Activities</div>
+        <div class="link-child" id="gallery" onclick="window.location.assign('./gallery')">Gallery</div>
+        <div class="link-child" id="contact-us" onclick="window.location.assign('./contact-us')">Contact Us</div>
     </div>
 
     <div id="mob-nav">
-        <div class="ico">
-            <img id="left-link" src="../icons/menu.svg" alt="Menu">
-        </div>
         <div class="ico" id="main-logo">
             <img src="../assets/logo trip.png" alt="Logo">
         </div>
         <div class="ico">
-            <img id="right-link" src="../icons/contact.svg" alt="Contact">
+            <img src="../icons/whatsapp.svg" onclick="clickWA();" alt="Whatsapp">
+        </div>
+        <div class="ico">
+            <img src="../icons/phone.svg" onclick="clickCall();" alt="Call">
+        </div>
+        <div class="ico">
+            <img id="right-link" src="../icons/menu.svg" alt="Menu">
         </div>
     </div>
 
@@ -279,22 +279,6 @@
             document.querySelector('html').classList.toggle('no-scroll');
         }
 
-        document.querySelector('#left-link').addEventListener('click', function () {
-            if (open_menu == 0) {
-                document.querySelector('#left-menu').classList.add('left-slide');
-                open_menu = 1;
-                toggleOpaque();
-            } else if (open_menu == 1) {
-                document.querySelector('#left-menu').classList.remove('left-slide');
-                open_menu = 0;
-                toggleOpaque();
-            } else if (open_menu == 2) {
-                document.querySelector('#right-menu').classList.remove('right-slide');
-                document.querySelector('#left-menu').classList.add('left-slide');
-                open_menu = 1;
-            }
-        });
-
         document.querySelector('#right-link').addEventListener('click', function () {
             if (open_menu == 0) {
                 document.querySelector('#right-menu').classList.add('right-slide');
@@ -305,7 +289,7 @@
                 open_menu = 0;
                 toggleOpaque();
             } else if (open_menu == 1) {
-                document.querySelector('#left-menu').classList.remove('left-slide');
+                // document.querySelector('#left-menu').classList.remove('left-slide');
                 document.querySelector('#right-menu').classList.add('right-slide');
                 open_menu = 2;
             }
