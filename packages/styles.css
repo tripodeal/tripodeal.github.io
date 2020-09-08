@@ -251,7 +251,8 @@
     .img-det img{
         margin: 2.5% 0;
         height: 45%;
-        width: 95%;
+        width: auto;
+        max-width: 98%;
         border-radius: 3vh;
     }
 
