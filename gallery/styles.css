@@ -100,7 +100,7 @@
     }
 
     .section #ww {
-        grid-template-rows: repeat(10, 200px);
+        grid-template-rows: repeat(6, 200px);
     }
 
     .img-cont img {
@@ -132,11 +132,6 @@
     .img-cont img:nth-child(21) {
         grid-column: 1/ span 2;
         grid-row: 9/span 2;
-    }
-
-    #ww img:nth-last-child(1) {
-        grid-column: 3/ span 2;
-        grid-row: 11/span 2;
     }
 
     .section #pp {

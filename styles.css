@@ -12,28 +12,28 @@ li>a {
     text-decoration: none;
 }
 
-.preloader{
+.preloader {
     z-index: 100;
-    background:aliceblue;
+    background: aliceblue;
     height: 100vh;
     width: 100vw;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;     
+    flex-direction: column-reverse;
 }
 
-.preloader>svg{
+.preloader>svg {
     height: 80vh !important;
     width: 80vh !important;
     margin-top: -20vh
 }
 
-.preloader>div{
+.preloader>div {
     font-size: 2em;
     color: var(--main-night);
-    margin-top: -20vh; 
+    margin-top: -20vh;
 }
 
 @media screen and (orientation:landscape) {
@@ -163,10 +163,17 @@ li>a {
         width: auto;
         color: var(--main-night);
         flex-direction: row;
-        font-size: 3vh;
+        font-size: 1.5vw;
         font-family: 'Hind', sans-serif;
         font-weight: 500;
         justify-content: flex-end;
+    }
+
+    #wa-desk {
+        width: 6vw !important;
+        font-size: 2.5vw;
+        right: 5vw;
+        position: absolute;
     }
 
     #links>.link-child {
@@ -833,15 +840,16 @@ li>a {
         height: 15%;
         font-size: 5.5vw;
     }
-    .preloader>svg{
+
+    .preloader>svg {
         height: 90vw !important;
         width: 90vw !important;
         margin-top: -10vh
     }
-    
-    .preloader>div{
+
+    .preloader>div {
         font-size: 2em;
         color: var(--main-night);
-        margin-top: -10vh; 
+        margin-top: -10vh;
     }
 }
