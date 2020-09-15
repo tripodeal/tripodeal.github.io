@@ -622,7 +622,7 @@ li>a {
     #main-head {
         color: var(--main-night);
         border-bottom: 3px solid var(--sec-hl);
-        width: 100%;
+        width: 96%;
         font-weight: 500;
         font-size: 7vw;
         font-style: italic;
