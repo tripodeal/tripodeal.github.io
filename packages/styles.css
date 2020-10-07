@@ -60,7 +60,7 @@
     }
 
     .desc>h6 {
-        font-size: 30px;
+        font-size: 28px;
         color: var(--main-light);
         margin: 0;
         letter-spacing: 0.1em;
@@ -91,9 +91,10 @@
     }
 
     #pack-wrap {
-        width: 100%;
+        width: 87.5%;
         overflow-x: scroll;
         justify-content: flex-start;
+        scroll-behavior: smooth;
     }
 
     #pack-wrap {
@@ -110,7 +111,6 @@
 
     #pack-cont {
         width: auto;
-        padding: 0 5vw;
     }
 
     #pack-sub-cont {
@@ -256,6 +256,18 @@
         border-radius: 3vh;
     }
 
+    .super-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .arrow-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.25%;
+        cursor: pointer;
+    }
 }
 
 @media screen and (orientation : portrait) {
@@ -505,5 +517,15 @@
         height: 170px;
         width: 95%;
         border-radius: 3vh;
+    }
+
+    .super-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .arrow-cont{
+        display: none;
     }
 }

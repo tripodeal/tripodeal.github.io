@@ -88,78 +88,86 @@
             subtle nature's snapshot we have the best packages of Dandeli. So grab the package which suites you best.
         </div>
 
-        <div id="pack-wrap">
-            <div id="pack-cont">
-                <div id="pack-sub-cont">
-                    <div class="card-cont">
-                        <div class="card">
-                            <img src="../images/WW/twin-cottage-external-1.jpg" alt="River Side with Pool Resort">
-                            <div class="desc">
-                                <h6>River Side with Pool Resort</h6>
-                                <button data-type="rswpr" onclick="openPlay(this)">Know More</button>
+        <div class="super-wrap">
+            <div id="right-arrow" class="arrow-cont">
+                <img src="../icons/right_pack.svg" alt="right_arrow">
+            </div>
+            <div id="pack-wrap">
+                <div id="pack-cont">
+                    <div id="pack-sub-cont">
+                        <div class="card-cont">
+                            <div class="card">
+                                <img src="../images/WW/twin-cottage-external-1.jpg" alt="River Side with Pool Resort">
+                                <div class="desc">
+                                    <h6>River Side with Pool Resort</h6>
+                                    <button data-type="rswpr" onclick="openPlay(this)">Know More</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="arrow">
-                        <img src="../icons/arrow.svg">
-                    </div>
-                </div>
-                <div id="pack-sub-cont">
-                    <div class="card-cont">
-                        <div class="card">
-                            <img src="../images/pp6.jpeg" alt="Jungle Estate Homestay Resort">
-                            <div class="desc">
-                                <h6>Jungle Estate Homestay</h6>
-                                <button data-type="jeh" onclick="openPlay(this)">Know More</button>
-                            </div>
+                        <div class="arrow">
+                            <img src="../icons/arrow.svg">
                         </div>
                     </div>
-                    <div class="arrow">
-                        <img src="../icons/arrow.svg">
-                    </div>
-                </div>
-                <div id="pack-sub-cont">
-                    <div class="card-cont">
-                        <div class="card">
-                            <img src="../images/Starling main.jpeg" alt="River Side Jungle Resort">
-                            <div class="desc">
-                                <h6>River Side Jungle Resort</h6>
-                                <button data-type="rsjr" onclick="openPlay(this)">Know More</button>
+                    <div id="pack-sub-cont">
+                        <div class="card-cont">
+                            <div class="card">
+                                <img src="../images/pp6.jpeg" alt="Jungle Estate Homestay Resort">
+                                <div class="desc">
+                                    <h6>Jungle Estate Homestay</h6>
+                                    <button data-type="jeh" onclick="openPlay(this)">Know More</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="arrow">
-                        <img src="../icons/arrow.svg">
-                    </div>
-                </div>
-                <div id="pack-sub-cont">
-                    <div class="card-cont">
-                        <div class="card">
-                            <img src="../images/rc2.jpeg" alt="Wild Jungle Stay with Pool">
-                            <div class="desc">
-                                <h6>Wild Jungle Stay with Pool</h6>
-                                <button data-type="wjswp" onclick="openPlay(this)">Know More</button>
-                            </div>
+                        <div class="arrow">
+                            <img src="../icons/arrow.svg">
                         </div>
                     </div>
-                    <div class="arrow">
-                        <img src="../icons/arrow.svg">
-                    </div>
-                </div>
-                <div id="pack-sub-cont">
-                    <div class="card-cont">
-                        <div class="card">
-                            <img src="../images/Pebble Bay Homestay/PB3.jpg" alt="Pebble Bay Homestay Resort">
-                            <div class="desc">
-                                <h6>Pebble Bay Homestay</h6>
-                                <button data-type="pbh" onclick="openPlay(this)">Know More</button>
+                    <div id="pack-sub-cont">
+                        <div class="card-cont">
+                            <div class="card">
+                                <img src="../images/Starling main.jpeg" alt="River Side Jungle Resort">
+                                <div class="desc">
+                                    <h6>River Side Jungle Resort</h6>
+                                    <button data-type="rsjr" onclick="openPlay(this)">Know More</button>
+                                </div>
                             </div>
                         </div>
+                        <div class="arrow">
+                            <img src="../icons/arrow.svg">
+                        </div>
                     </div>
-                    <div class="arrow">
-                        <img src="../icons/arrow.svg">
+                    <div id="pack-sub-cont">
+                        <div class="card-cont">
+                            <div class="card">
+                                <img src="../images/rc2.jpeg" alt="Wild Jungle Stay with Pool">
+                                <div class="desc">
+                                    <h6>Wild Jungle Stay with Pool</h6>
+                                    <button data-type="wjswp" onclick="openPlay(this)">Know More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <img src="../icons/arrow.svg">
+                        </div>
+                    </div>
+                    <div id="pack-sub-cont">
+                        <div class="card-cont">
+                            <div class="card">
+                                <img src="../images/Pebble Bay Homestay/PB3.jpg" alt="Pebble Bay Homestay Resort">
+                                <div class="desc">
+                                    <h6>Pebble Bay Homestay</h6>
+                                    <button data-type="pbh" onclick="openPlay(this)">Know More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <img src="../icons/arrow.svg">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div id="left-arrow" class="arrow-cont">
+                <img src="../icons/left_pack.svg" alt="left_arrow">
             </div>
         </div>
         <div id="play-area">
@@ -393,6 +401,13 @@
                 open = 1;
             }
         };
+
+        document.querySelector('#right-arrow').addEventListener('click',function(){
+            document.querySelector('#pack-wrap').scrollLeft+=200;
+        });
+        document.querySelector('#left-arrow').addEventListener('click',function(){
+            document.querySelector('#pack-wrap').scrollLeft-=200;
+        });
     </script>
 </body>
 
