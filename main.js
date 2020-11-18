@@ -95,11 +95,10 @@ function isElementInViewport(el) {
 var open_menu = 0;
 
 function toggleOpaque() {
-    var list = document.querySelectorAll('body')[0].children;
+    var list = document.querySelectorAll('body > div');
+    console.log(list);
     list[5].classList.toggle('opacity');
     list[6].classList.toggle('opacity');
-    list[7].classList.toggle('opacity');
-    list[8].classList.toggle('opacity');
 
     // toggle scrolling too
     document.querySelector('html').classList.toggle('no-scroll');
